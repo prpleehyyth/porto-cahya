@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Case Study — Maria Cahya Jayanti</title>
+  <meta name="description" content="Detailed Project Case Study by Maria Cahya Jayanti — Bachelor of Applied Science (D4) in Informatics Management." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="bento-wrapper">
+
+    <!-- =======================================================
+         1. TOP NAVBAR CARD (Back to Portfolio + Project Switcher)
+         ======================================================= -->
+    <header class="bento-navbar">
+      <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+        <a href="index.html" class="btn-pink coral" style="padding: 8px 16px;">
+          ← Back to Portfolio
+        </a>
+        <a href="index.html" class="brand-logo">
+          <span class="light-italic">MARIA</span>
+          <span class="bold-name">CAHYA JAYANTI</span>
+        </a>
+      </div>
+
+      <nav class="filter-pills" aria-label="Switch Project Case Study">
+        <a href="project.html?id=tracking" class="filter-tab" data-proj-nav="tracking">1. TRACKING SURAT</a>
+        <a href="project.html?id=reimbursement" class="filter-tab" data-proj-nav="reimbursement">2. REIMBURSEMENT</a>
+        <a href="project.html?id=imdb" class="filter-tab" data-proj-nav="imdb">3. IMDB SENTIMENT</a>
+        <a href="project.html?id=ozemart" class="filter-tab" data-proj-nav="ozemart">4. OZE MART UI/UX</a>
+        <a href="project.html?id=content" class="filter-tab" data-proj-nav="content">5. DIGITAL CONTENT</a>
+      </nav>
+    </header>
+
+    <!-- =======================================================
+         2. DYNAMIC BENTO CASE STUDY CONTENT
+         ======================================================= -->
+    <main id="projectDetailContainer" class="details-bento-grid" aria-live="polite">
+      <!-- Populated by script.js based on ?id= parameter -->
+    </main>
+
+    <!-- =======================================================
+         3. BOTTOM FOOTER BAR
+         ======================================================= -->
+    <footer class="bento-navbar" style="padding: 20px 34px;">
+      <div style="font-size: 0.85rem; color: var(--text-dark);">
+        © 2026 <strong>Maria Cahya Jayanti</strong> • Mojokerto, East Java, Indonesia
+      </div>
+      <div class="nav-links" style="gap: 24px;">
+        <a href="index.html">HOME</a>
+        <a href="https://www.linkedin.com/in/maria-cahya-jayantii" target="_blank" rel="noopener">LINKEDIN</a>
+        <a href="https://github.com/22091397017MariaCahyaJayanti" target="_blank" rel="noopener">GITHUB</a>
+        <a href="mailto:mariacahyaj@gmail.com">EMAIL</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Optional Image Zoom Lightbox for Gallery Screens -->
+  <div class="modal-backdrop" id="caseModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
